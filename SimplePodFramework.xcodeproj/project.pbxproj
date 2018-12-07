@@ -9,13 +9,28 @@
 /* Begin PBXBuildFile section */
 		125248C621BA582D00E435C7 /* SimplePodFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 125248C421BA582D00E435C7 /* SimplePodFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		125248CD21BA584800E435C7 /* SimpleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125248CC21BA584800E435C7 /* SimpleModel.swift */; };
+		125248D721BA5A0700E435C7 /* SimplePodFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125248D621BA5A0700E435C7 /* SimplePodFrameworkTests.swift */; };
+		125248D921BA5A0700E435C7 /* SimplePodFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125248C121BA582D00E435C7 /* SimplePodFramework.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		125248DA21BA5A0700E435C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 125248B821BA582D00E435C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 125248C021BA582D00E435C7;
+			remoteInfo = SimplePodFramework;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		125248C121BA582D00E435C7 /* SimplePodFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimplePodFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		125248C421BA582D00E435C7 /* SimplePodFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimplePodFramework.h; sourceTree = "<group>"; };
 		125248C521BA582D00E435C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		125248CC21BA584800E435C7 /* SimpleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleModel.swift; sourceTree = "<group>"; };
+		125248D421BA5A0700E435C7 /* SimplePodFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePodFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		125248D621BA5A0700E435C7 /* SimplePodFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePodFrameworkTests.swift; sourceTree = "<group>"; };
+		125248D821BA5A0700E435C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		125248D121BA5A0700E435C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125248D921BA5A0700E435C7 /* SimplePodFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				125248C321BA582D00E435C7 /* SimplePodFramework */,
+				125248D521BA5A0700E435C7 /* SimplePodFrameworkTests */,
 				125248C221BA582D00E435C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				125248C121BA582D00E435C7 /* SimplePodFramework.framework */,
+				125248D421BA5A0700E435C7 /* SimplePodFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,11 +73,36 @@
 		125248C321BA582D00E435C7 /* SimplePodFramework */ = {
 			isa = PBXGroup;
 			children = (
+				125248CF21BA59AC00E435C7 /* Resources */,
+				125248CE21BA599E00E435C7 /* Classes */,
 				125248C421BA582D00E435C7 /* SimplePodFramework.h */,
 				125248C521BA582D00E435C7 /* Info.plist */,
-				125248CC21BA584800E435C7 /* SimpleModel.swift */,
 			);
 			path = SimplePodFramework;
+			sourceTree = "<group>";
+		};
+		125248CE21BA599E00E435C7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				125248CC21BA584800E435C7 /* SimpleModel.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		125248CF21BA59AC00E435C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		125248D521BA5A0700E435C7 /* SimplePodFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				125248D621BA5A0700E435C7 /* SimplePodFrameworkTests.swift */,
+				125248D821BA5A0700E435C7 /* Info.plist */,
+			);
+			path = SimplePodFrameworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,18 +137,40 @@
 			productReference = 125248C121BA582D00E435C7 /* SimplePodFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		125248D321BA5A0700E435C7 /* SimplePodFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125248DC21BA5A0700E435C7 /* Build configuration list for PBXNativeTarget "SimplePodFrameworkTests" */;
+			buildPhases = (
+				125248D021BA5A0700E435C7 /* Sources */,
+				125248D121BA5A0700E435C7 /* Frameworks */,
+				125248D221BA5A0700E435C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				125248DB21BA5A0700E435C7 /* PBXTargetDependency */,
+			);
+			name = SimplePodFrameworkTests;
+			productName = SimplePodFrameworkTests;
+			productReference = 125248D421BA5A0700E435C7 /* SimplePodFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		125248B821BA582D00E435C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Pham Anh Quoc Phien";
 				TargetAttributes = {
 					125248C021BA582D00E435C7 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+					};
+					125248D321BA5A0700E435C7 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -115,12 +187,20 @@
 			projectRoot = "";
 			targets = (
 				125248C021BA582D00E435C7 /* SimplePodFramework */,
+				125248D321BA5A0700E435C7 /* SimplePodFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		125248BF21BA582D00E435C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125248D221BA5A0700E435C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +218,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		125248D021BA5A0700E435C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125248D721BA5A0700E435C7 /* SimplePodFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		125248DB21BA5A0700E435C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 125248C021BA582D00E435C7 /* SimplePodFramework */;
+			targetProxy = 125248DA21BA5A0700E435C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		125248C721BA582D00E435C7 /* Debug */ = {
@@ -316,6 +412,42 @@
 			};
 			name = Release;
 		};
+		125248DD21BA5A0700E435C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33A3NA2C2V;
+				INFOPLIST_FILE = SimplePodFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cybozu.SimplePodFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		125248DE21BA5A0700E435C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33A3NA2C2V;
+				INFOPLIST_FILE = SimplePodFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cybozu.SimplePodFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +465,15 @@
 			buildConfigurations = (
 				125248CA21BA582D00E435C7 /* Debug */,
 				125248CB21BA582D00E435C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		125248DC21BA5A0700E435C7 /* Build configuration list for PBXNativeTarget "SimplePodFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125248DD21BA5A0700E435C7 /* Debug */,
+				125248DE21BA5A0700E435C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
