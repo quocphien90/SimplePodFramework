@@ -7,3 +7,34 @@
 //
 
 import Foundation
+
+class SimpleModel: NSObject {
+    public var simpleID: Int
+    public var simpleString: String
+    
+    public override init(){
+        self.simpleString = ""
+        self.simpleID = 0
+        super.init()
+    }
+    
+    public init(_ simpleID: Int, _ simpleString: String)
+    {
+        self.simpleID = simpleID
+        self.simpleString = simpleString
+    }
+    
+    public func getID() -> Int {
+        return self.simpleID
+    }
+    public func getString() -> String {
+        return self.simpleString
+    }
+    
+    public func setID(_ simpleID: Int){
+        self.simpleID = simpleID
+    }
+    public func setString(_ simpleString: String) {
+        self.simpleString = simpleString
+    }
+}
