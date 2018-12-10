@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Promises
 
 class SimpleModel: NSObject {
     public var simpleID: Int
