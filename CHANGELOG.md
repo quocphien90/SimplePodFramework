@@ -4,5 +4,5 @@
 - Implement simple model for using
 - Pod 
 
-## [0.0.2](https://github.com/quocphien90/SimplePodFramework/tree/master) (2018-12-10)
+## [0.0.2](https://github.com/quocphien90/SimplePodFramework/tree/master) (2018-01-28)
 - Add dependency frameworks
