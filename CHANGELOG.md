@@ -6,3 +6,6 @@
 
 ## [0.0.2](https://github.com/quocphien90/SimplePodFramework/tree/master) (2018-01-28)
 - Add dependency frameworks
+
+## [0.0.3](https://github.com/quocphien90/SimplePodFramework/tree/master) (2018-01-28)
+- Add dependency frameworks
